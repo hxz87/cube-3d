@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<style>
+	table
+	{
+		border-collapse:collapse;
+		height: 400px;
+		width: 400px;
+		text-align:center; 
+		vertical-align:middle;
+	}
+	td{
+		height: 100px;
+		width: 100px;
+		
+	}
+	table, td, th
+	{
+		border:1px solid black;
+	}
+	table td:hover{ background:#09C;}
+</style>
+<html>
+<head>
+    <!-- Article: http://www.paulrhayes.com/2009-07/animated-css3-cube-interface-using-3d-transforms/ -->
+    <!-- Demo: http://www.paulrhayes.com/experiments/cube-3d/ -->
+    <!-- Originally posted: 17th July 2009 -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>3D CSS cube, use arrow keys to rotate &mdash; Paul Hayes</title>
+    <meta name="author" content="Paul Hayes" />
+    <!--<link rel="stylesheet" href="../experiment-styles.css" />-->
+
+    <link rel="stylesheet" href="css/experiment.css" />
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body class="experiment">
+    <div class="wrapper">
+        <p class="learn">
+            This is a demo, <a href="http://www.paulrhayes.com/2009-07/animated-css3-cube-interface-using-3d-transforms/">learn how it works</a>.
+        </p>
+<div id="experiment">
+    <div id="cube">
+        <div class="face one">
+            <table style="background:#999;opacity:0.5;filter:alpha(opacity=50);">
+				<tr><td>1</td><td>2</td><td>3</td></tr>
+				<tr><td>4</td><td>5</td><td>6</td></tr>
+				<tr><td>7</td><td>7</td><td>8</td></tr>
+			</table>
+        </div>
+        <div class="face two">
+            <table style="background:#00FF00;opacity:0.5;filter:alpha(opacity=50);">
+				<tr><td>1</td><td>2</td><td>3</td></tr>
+				<tr><td>4</td><td>5</td><td>6</td></tr>
+				<tr><td>7</td><td>7</td><td>8</td></tr>
+			</table>
+        </div>
+        <div class="face three">
+            <table style="background:#00BBFF;opacity:0.5;filter:alpha(opacity=50);">
+				<tr><td>1</td><td>2</td><td>3</td></tr>
+				<tr><td>4</td><td>5</td><td>6</td></tr>
+				<tr><td>7</td><td>7</td><td>8</td></tr>
+			</table>
+        </div>
+        <div class="face four">
+            <table style="background:#9900FF;opacity:0.5;filter:alpha(opacity=50);">
+				<tr><td>1</td><td>2</td><td>3</td></tr>
+				<tr><td>4</td><td>5</td><td>6</td></tr>
+				<tr><td>7</td><td>7</td><td>8</td></tr>
+			</table>
+        </div>
+        <div class="face five">
+            <table style="background:#FFFF33;opacity:0.5;filter:alpha(opacity=50);">
+				<tr><td>1</td><td>2</td><td>3</td></tr>
+				<tr><td>4</td><td>5</td><td>6</td></tr>
+				<tr><td>7</td><td>7</td><td>8</td></tr>
+			</table>
+        </div>
+        <div class="face six">
+            <img src="images/sonic.gif" />
+        </div>
+    </div>
+</div>
+
+    </div>
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/experiment.js"></script>
+</body>
+<script type="text/javascript">
+	function rgb(){
+		var rgb=['#aaa','#bbb','#ccc','#ddd','#eee']
+		return rgb[Math.round(Math.random()*4)];
+	}
+	document.body.table.style.backgroundColor=rgb();
+</script>
+</html>
